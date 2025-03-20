@@ -8,6 +8,9 @@ compinit
 setopt AUTO_PUSHD
 setopt PUSHD_IGNORE_DUPS
 
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 eval "$(starship init zsh)"
 
 # bun completions
