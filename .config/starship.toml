@@ -14,21 +14,22 @@ truncation_symbol = ""
 fish_style_pwd_dir_length = 1
 
 [git_branch]
-format = "on [$branch](bold purple)"
-symbol = ""
+format = "[$symbol$branch](bold purple)"
 
 [git_status]
-format = "([$ahead_behind$all_status](bold red))"
+format = "[$ahead_behind$all_status](bold red)"
 ahead = "\\[↑${count}\\]"
 behind = "\\[↓${count}\\]"
+deleted = "\\[x${count}\\]"
+renamed = "\\[r${count}\\]"
 staged = "\\[+${count}\\]"
 modified = "\\[~${count}\\]"
 untracked = "\\[?${count}\\]"
 conflicted = "\\[!${count}\\]"
+stashed = ""
 
 [bun]
-format = "[$symbol ($version)](bold yellow)"
-symbol = "🥟"
+format = "[$symbol($version)](bold yellow)"
 
 [character]
 success_symbol = "[❯](bold green)"
