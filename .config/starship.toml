@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$directory $git_branch$git_status $bun
+$directory $git_branch$git_status $nodejs $bun
 $character
 """
 
@@ -30,6 +30,9 @@ stashed = ""
 
 [bun]
 format = "[$symbol($version)](bold yellow)"
+
+[nodejs]
+format = "[$symbol($version)](bold green)"
 
 [character]
 success_symbol = "[❯](bold green)"
